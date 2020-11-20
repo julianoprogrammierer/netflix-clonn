@@ -1,0 +1,122 @@
+:root{
+    --black:#141414;
+    --red:#e50914;
+    --white:white;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+
+    background: var(--black);
+    font-family: 'Arial',Times,serif;
+    color:var(--white);
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+
+     
+}
+header .logo{
+    color: var(--red);
+    font-family: "Arial black",Times;
+    font-size: 40px;
+    margin-left: 10px;
+
+}
+header nav a {
+    text-decoration: none;
+    color:rgb(216, 12, 12);
+    margin-right: 10px;    
+
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+
+.main-movie{
+    font-size: 19px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%),url('/pages/breakingbad.jpg');
+        height: 600px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+
+
+.main-movie .description{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    
+}
+
+.main-movie .title{
+    margin-top: 15%;
+    font-size: 40px;
+}
+
+.button{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: var(--white);
+
+    padding: 15px 30px;
+    
+
+    cursor:pointer;
+
+    transition: .200ms ease all;
+}
+
+
+.button:hover{
+    background-color: var(--white);
+    color: var(--black);
+
+}
+
+button i{
+    margin-right: 7px;
+}
+
+.container{
+    margin-left: 20px;   
+   
+}
+.main-movie .container{
+    width: 70%;
+}
+
+.box-movie{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carousel-movies{
+    margin-top: 5px;
+    
+}
+
+.myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
